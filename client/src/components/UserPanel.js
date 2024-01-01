@@ -66,9 +66,7 @@ const UserPanel = () => {
   const posts = Data.posts
 
 
-  const formData = new FormData
-  formData.append("DP",chnage.newDp, chnage.newDp.name)
-  formData.append("name",chnage.name)
+
   return (
     <>
       <nav>
