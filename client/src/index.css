@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    /* background-color:#171717; */
+}
+.image{
+
+    width: 140px;
+    height: 140px;
+    /* border-radius: 50% ; */
+
+    /* background-position:center center; */
+}
+.dp{
+    height:100%;
+    width:100%;
+    border-radius: 50%;
+}
+.postImage {
+    margin-top: 20px;
+    /* box-shadow: 10px 10px 20px brown; */
+   
+    width: 600px;
+    height:auto;
+
+
+
+}
+
+h4{
+    margin:12px 10px;
+
+}
+.userPage{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.UserPanel{
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+
+}
+.info{
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.postOPS {
+    position: absolute;
+    top: 0px;
+    text-align: top;
+    right: 7px;
+    font-size: 30px;
+    background-color: black;
+    cursor: pointer;
+}
+.newPost{
+    margin-top: 10%;
+}
+.post {
+    position: relative;
+    background-color: black;
+    width: 600px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+    /* box-sizing: content-box; */
+
+}
+
+p {
+    color: white;
+    text-align: justify;
+}
+
+.age {
+    color: white;
+}
+
+.DP {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url('./dp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center 0%; */
+}
+.color{
+    color:white;
+}
+.infoBox {
+    display: flex;
+    padding-top: 10px;
+    padding: 7px;
+    color:white;
+    margin-bottom: 0px;
+}
+
+.post-desc {
+    margin-left: 5px;
+}
+
+.desc {
+    padding: 7px;
+    margin: 0 13px;
+    color: black
+    /* border-bottom: 1.7px solid white; */
+
+}
+.line{
+    width: 98%;
+    margin-left: 1%;
+    height: 1px;
+    background-color: white;
+}
+.signWrapper {
+    /* border: 2px solid grey; */
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height:100vh;
+    width: 100vw;
+    
+    
+
+}
+.feedWrapper{
+    position: relative;
+}
+/* .postCreate{
+    position: absolute;
+    top:30%;
+    left:30%
+
+} */
+.body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.postContainer{
+    margin-top: 10%;
+}
+/* <--icons styling> */
+.feedToggle{
+    font-size: 14px;
+
+    width: 20px;
+    height: 20px;
+  
+}
+.lens{
+    position: absolute;
+    top:22px;
+    left:26%;
+    font-size: 22px;
+    height: 30px;
+    margin-top: 5px;
+    color: red;
+}
+nav{
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 80px;
+    background:linear-gradient(90deg, rgba(232,159,32,1) 0%, rgba(235,36,137,1) 33%, rgba(148,19,217,1) 66%, rgba(255,248,0,1) 100%);
+    z-index: 4;
+    padding-left: 20px;
+}
+.navEle{
+    flex-basis: 33.333%;
+}
+ul.navEle{
+    display: flex;
+    justify-content: space-evenly;
+}
+.search{
+    margin: 0;
+    padding: 0;
+    /* height: 300px; */
+    width:350px;
+    position: absolute;
+    top:80px;
+    left: 70px;
+    background:linear-gradient(90deg, rgba(232,159,32,1), rgba(235,36,137,1));
+    padding-top:1% ;
+    padding-left: 1%;
+    z-index: -1;
+
+}
+.searchUser{
+    display: flex;
+    justify-content: center
+    ;align-items: center;
+    
+}
+li{
+    display: inline-block;
+    list-style-type:none;
+    color: white;
+}
+#seach-bar{
+    position: relative;
+    margin-left: 30px;
+    width:310px;
+    height: 40px;
+    font-size: 20px;
+    padding-right: 40px;
+    border-radius: 20px;
+    border: 1px solid black;
+    border: 0;
+    padding-left: 20px;
+}
+#seach-bar:focus{
+    outline: none;
+}
+#seach-bar:focus .lens{
+    transform: rotateY(180deg);
+}
+.active{
+    padding-bottom: 4px;
+    border-bottom: 2px solid blue;
+}
+nav h3{
+    color:orange;
+    display: inline;
+}
+.create{
+    background-color: inherit;
+    border: 0;
+    color: white;
+}
+.LoginForm {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0;
+    box-shadow: 0.7px 1px 5px 5px rgb(205, 194, 194);
+    /* flex-direction: column; */
+    justify-content:center;
+    background-color:whitesmoke;
+    border-radius: 10px;
+    width: 400px;
+    height: 350px;
+    /* background-color:whitesmoke; */
+}
+.edit{
+    color: black;
+}
+textarea{
+    
+    font-size: 20px;
+    height: 25px;
+}
+.Friend{
+    margin-top: 20px;
+    height: 38px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    padding: 2px ;
+    border-radius: 10px;
+    border: 0;
+    color:white;
+    background:linear-gradient(90deg, rgba(232,159,32,1), rgba(235,36,137,1));
+
+}
+.title {
+    /* color: white; */
+    text-align: center;
+    margin:20px 0;
+    font-size: 20px;
+}
+
+.LoginForm input,
+.SumbitButton {
+    width: 80%;
+    height: 15%;
+    margin: 2px 0;
+    border-radius: 8px;
+    font-size: 20px;
+    padding-left: 5px;
+    color: rgb(255, 128, 0);
+    border: 0.7px solid grey;
+    
+    
+    
+}
+input::placeholder{
+    color:rgb(255, 128, 0);
+}
+
+.SumbitButton:focus {
+    outline: none;
+}
+.toggle{
+    text-align: center;
+    width: 40%;
+    font-size: 20px;
+    height: 15%;
+    padding:  0 34px ;
+    border-radius: 8px;
+    border:none;
+    color: antiquewhite;
+    background-color: rgb(23, 227, 12);
+    /* display:none */
+}
+.LoginForm input:focus {
+    outline: none;
+}
+
+label{
+    color:white
+}
+#postSelection{
+    color:white
+}
+.SumbitButton {
+    background-color: rgb(255, 128, 0);
+    /* font-size: 20px; */
+    color: white
+}
+/* interaction */
+.interact-panel{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.interact{
+    height:24px;
+    width:26px;
+
+    
+    /* border: 1px solid #fff; */
+    color: white;
+}
+
+.comment{
+    font-size: 20px;
+    color: white;
+    
+}
+
+/* <--User Panel--> */
+.userWrapper{
+    width:700px;
+    height: 500px;
+}
